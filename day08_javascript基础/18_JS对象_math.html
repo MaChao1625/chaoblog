@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>math对象</title>
+</head>
+<body>
+<script>
+    //数学对象
+    //创建（math对象不用创建直接使用）
+    document.write(Math.PI + "<br>");
+    //产生一个随机数[0,1)
+    document.write(Math.random() + "<br>");
+    //ceil（x）对数字进行向上取整
+    document.write(Math.ceil(3.8) + "<br>");
+    //floor（x）对数字进行向下取整
+    document.write(Math.floor(3.8) + "<br>");
+    //round(x)数字进行四舍五入
+    document.write(Math.round(3.8) + "<br>");
+    //产生一个[1,100]的随机整数
+        //1.产生一个[0,1）的随机数字
+        //2.对该数字*100并且向下取整，产生一个[0,99]的整数
+        //3.对生成的结果整体加一，生成一个[1,100]的整数
+    document.write(Math.floor((Math.random()*100)+1)+"<br>");
+
+
+</script>
+
+
+</body>
+</html>

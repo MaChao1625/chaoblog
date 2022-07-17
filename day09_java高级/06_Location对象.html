@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>location</title>
+</head>
+<body>
+<input id="btn" type="button" value="刷新"></input>
+<input id="gobaidu" type="button" value="去百度"></input>
+<script>
+//1.reload方法，定义一个按钮，点击按钮，刷新当前页面
+    //1.获取按钮的id
+    var btn = document.getElementById("btn");
+    //2.绑定单击事件
+    btn.onclick = function (fun) {
+        //3.刷新页面
+        location.reload();
+    }
+//    2.获取href
+    alert(location.href);
+    //点击按钮，去访问百度的官网
+    var gobaidu =document.getElementById("gobaidu");
+    //2.绑定单击事件
+    gobaidu.onclick = function (fun) {
+        //3.刷新页面
+       location.href="https://www.baidu.com";
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom获取元素对象</title>
+</head>
+<body>
+<!--1.修改属性值-->
+<!--
+<img id="tupian" src="img/off.gif">
+<script>
+    //通过id获取元素对象
+    var light = document.getElementById("tupian");
+    //alert(light)
+    alert("我要开始换图片啦。。。。")
+    light.src="img/on.gif";
+</script>
+-->
+
+<!--2.修改标签体的内容-->
+<h1 id="biaoti">悔创阿里杰克马</h1>
+<script>
+    var neirong = document.getElementById("biaoti");
+    //修改内容
+    alert("我要开始换内容啦。。。。");
+    neirong.innerHTML = "不识妻美刘强东";
+</script>
+
+</body>
+</html>

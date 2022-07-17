@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function对象</title>
+</head>
+<body>
+<script>
+    //function:函数（方法）对象
+   /* //1.创建方式一
+    var fun1 = new Function("a", "b", "c", "alert(a)");
+    fun1(3, 4, 5);
+
+    //2.创建方式二
+    function fun2(a, b, c) {
+        alert(a + b + c);
+    }
+    fun2(1,2,4)
+    //3.创建方式三
+    var fun3 = function (a,b,c,d) {
+        alert(a+b+c+d);
+
+
+    }
+    //计算形参的个数
+    alert(fun3.length)
+    fun3(1,2,3,4);
+    */
+    //重要的一点
+    //在方法声明中，有一个隐藏的内置对象（数组），arguments,封装所有的实际参数
+    //计算任意数之间的相加
+    function add() {
+        alert(arguments[0]);
+        alert(arguments[1]);
+    }
+    add(3,4)
+
+    function add1() {
+        var sum=0;
+        for (var i = 0; i <arguments.length ; i++) {
+            sum=sum+arguments[i];
+
+        }
+        return sum;
+
+    }
+    // var sum = add1(3,4,8);
+    // alert(sum)
+    alert(add1(8,9,10,11))
+
+
+    //调用:方法名称(实际参数链表)
+
+</script>
+
+
+</body>
+</html>

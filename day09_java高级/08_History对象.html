@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History对象</title>
+</head>
+<body>
+<input type="button" id="btn" value="获取当前页面的个数">
+<a href="09_History对象2.html">09页面</a>
+<input type="button" id="forward" value="前进">
+<script>
+    //1.获取按钮
+    var btn = document.getElementById("btn");
+    //2.绑定单击事件
+    btn.onclick=function (){
+        //3.获取当前窗口历史记录个数
+        var length=history.length;
+        alert(length);
+    }
+
+    //前进
+    //1.获取按钮
+    var forward= document.getElementById("forward");
+    //2.绑定单击事件
+    forward.onclick=function (){
+       history.forward();
+       //  history.go(1);
+    }
+
+</script>
+</body>
+</html>

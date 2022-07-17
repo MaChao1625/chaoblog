@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*分析：
+        *   点击超链接或者图片，需要换一张
+        * 1.给超链接绑定单击事件
+        * 2.重新设置图片的src属性值
+        *
+        *
+        * */
+        //先加载页面
+        window.onload=function () {
+            //1.获取图片的对象
+            var img= document.getElementById("checkCode");
+            //2.绑定单击事件
+            img.onclick=function () {
+                //加时间戳（为说什么呢因为服务器的缓存问题）
+                var date = new Date().getTime();
+                img.src="/day15_response/checkCodeServlet?"+date;
+            }
+            //2.获取链接的对象
+            var lianjie= document.getElementById("change");
+            lianjie.onclick=function () {
+                var date = new Date().getTime();
+                lianjie.href="/day15_response/register.html?"+date;
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="checkCode" src="/day15_response/checkCodeServlet"/>
+    <a id="change" href="/day15_response/checkCodeServlet">看不清楚换一张？</a>
+
+</body>
+</html>

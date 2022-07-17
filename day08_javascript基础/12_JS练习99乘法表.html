@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>99乘法表</title>
+    <style>
+        td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+<script>
+    document.write("<table  align='center'>");
+
+    //1.完成表格的嵌套，展示乘法表
+    for (var i = 1; i <= 9; i++) {
+        document.write("<tr>");//表格的行
+        for (var j = 1; j <= i; j++) {
+            document.write("<td>");//表格的列
+            //输出
+            document.write(i + "*" + j + "=" + (i * j) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+            document.write("</td>");
+        }
+        document.write("</tr>");
+
+        //输出换行
+        document.write("<br>");
+    }
+    document.write("</table>");
+</script>
+</body>
+</html>
